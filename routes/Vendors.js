@@ -31,4 +31,7 @@ router.route("/vendor/delete/:id").delete(DeleteVendor)
 
 router.route("/md").get(test)
 
+router.route("/").get((req,res)=>{
+ res.write("hey this is home")
+})
 module.exports = router
